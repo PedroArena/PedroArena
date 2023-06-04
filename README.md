@@ -1,10 +1,12 @@
-- 👋 Hi, I’m @PedroArena
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-PedroArena/PedroArena is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+curl http://sample-endpoint-name.network.quiknode.pro/token-goes-here/ \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "x-qn-api-version: 1" \
+  --data '{
+    "id":67,
+    "jsonrpc":"2.0",
+    "method":"qn_getTokenMetadataByContractAddress",
+    "params":{
+      "contract": "0x4d224452801ACEd8B2F0aebE155379bb5D594381"
+    }
+  }'
